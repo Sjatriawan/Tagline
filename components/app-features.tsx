@@ -11,7 +11,7 @@ export default function AppFeatures() {
     },
     {
       icon: <Zap className="h-6 w-6" />,
-      title: "Instant Results",
+      title: "Instant Pepek",
       description: "Get caption suggestions in seconds, no more staring at a blank text field.",
     },
     {
