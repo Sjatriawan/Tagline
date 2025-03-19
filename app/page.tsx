@@ -34,9 +34,10 @@ export default function Home() {
             </Link>
           </nav>
           <div>
-            <Button asChild>
-              <Link href="#download">
-                Download <Download className="ml-2 h-4 w-4" />
+            <Button asChild variant="ghost" className="bg-blue-500/30 hover:bg-blue-500/40">
+              <Link href="#download" className="flex items-center gap-2">
+                <Download className="h-4 w-4" />
+                <span>Download</span>
               </Link>
             </Button>
           </div>
@@ -55,8 +56,11 @@ export default function Home() {
                   </p>
                 </div>
                 <div className="flex flex-col gap-2 min-[400px]:flex-row">
-                  <Button size="lg" asChild>
-                    <Link href="#download">Download Now</Link>
+                  <Button size="lg" asChild className="bg-blue-500 hover:bg-blue-600">
+                    <Link href="#download" className="flex items-center gap-2">
+                      <Download className="h-4 w-4" />
+                      <span>Download Now</span>
+                    </Link>
                   </Button>
                 </div>
               </div>
@@ -120,17 +124,19 @@ export default function Home() {
                 </div>
                 <div className="flex flex-col gap-2 min-[400px]:flex-row">
                   <Link href="https://apps.apple.com" target="_blank" rel="noopener noreferrer">
-                    <Image
-                      src="/placeholder.svg?height=60&width=200&text=App+Store"
-                      alt="Download on App Store"
-                      width={200}
-                      height={60}
-                      className="h-[60px] w-auto"
-                    />
+                    <div className="bg-blue-500/30 hover:bg-blue-500/40 p-4 rounded-lg transition-colors">
+                      <Image
+                        src="/placeholder.svg?height=60&width=200&text=App+Store"
+                        alt="Download on App Store"
+                        width={200}
+                        height={60}
+                        className="h-[60px] w-auto"
+                      />
+                    </div>
                   </Link>
                 </div>
                 <div className="flex items-center gap-2 pt-4">
-                  <Check className="h-5 w-5 text-primary" />
+                  <Check className="h-5 w-5 text-blue-500" />
                   <span className="text-sm">Free download, premium features available</span>
                 </div>
               </div>
@@ -171,13 +177,13 @@ export default function Home() {
             © 2024 Tagline. All rights reserved.
           </p>
           <div className="flex items-center gap-4">
-            <Link href="/privacy-policy" className="text-sm font-medium hover:underline underline-offset-4">
+            <Link href="/privacy-policy" className="text-sm font-medium hover:underline underline-offset-4 bg-blue-500/30 hover:bg-blue-500/40 px-4 py-2 rounded-lg transition-colors">
               Privacy Policy
             </Link>
-            <Link href="/terms-of-service" className="text-sm font-medium hover:underline underline-offset-4">
+            <Link href="/terms-of-service" className="text-sm font-medium hover:underline underline-offset-4 bg-blue-500/30 hover:bg-blue-500/40 px-4 py-2 rounded-lg transition-colors">
               Terms of Service
             </Link>
-            <Link href="/contact" className="text-sm font-medium hover:underline underline-offset-4">
+            <Link href="/contact" className="text-sm font-medium hover:underline underline-offset-4 bg-blue-500/30 hover:bg-blue-500/40 px-4 py-2 rounded-lg transition-colors">
               Contact
             </Link>
           </div>
@@ -186,4 +192,5 @@ export default function Home() {
     </div>
   )
 }
+
 
